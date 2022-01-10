@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PlaceRent"
+    android:background="@drawable/main_layout_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_placeRentChildLayout"
+        android:padding="15dp"
+        android:text="@string/placeRentText"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/id_placeRentChildLayout"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_background"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/id_rentInnerLayout"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="4"
+            android:layout_marginTop="40dp"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/id_rentSubtract"
+                android:layout_weight="1"
+                android:src="@drawable/minus"
+                android:paddingEnd="10dp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/id_rentInput"
+                android:layout_weight="2"
+                android:background="@drawable/edittext_background_black_border"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="4"
+                android:theme="@style/Platform.MaterialComponents.Light"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/id_rentAdd"
+                android:layout_weight="1"
+                android:src="@drawable/add"
+                android:paddingStart="10dp"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. per night"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/id_rentInnerLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_txtRentRange"
+            android:text="@string/rentRange"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:paddingHorizontal="20dp"
+            android:layout_below="@+id/id_rentInnerLayout"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_layoutPlaceRentOffer"
+            android:background="@drawable/edittext_background_grey_border"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="10dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_placeRentOffer"
+                android:layout_weight="4.5"
+                android:text="@string/placeRentOffer"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:id="@+id/id_offerCheckBox"
+                android:layout_weight="0.5"
+                android:src="@drawable/circle"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/id_placeOffersRecyclerViewItemsUI"
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    <TextView
+        android:id="@+id/id_services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:text="@string/test"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_offersChildListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_services"
+        android:paddingHorizontal="20dp" />
+
+</RelativeLayout>

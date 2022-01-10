@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Map"
+    android:background="@drawable/main_layout_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_mapLayout"
+        android:padding="15dp"
+        android:text="@string/mp_location"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/id_mapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_background">
+
+        <fragment
+            android:id="@+id/id_fragmentForMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            />
+
+        <!--<EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_searchLocation"
+            android:hint="Search here"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center|start"
+            android:drawableStart="@drawable/search"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="7dp"
+            android:drawablePadding="6dp"
+            android:drawableTint="@color/black"
+            android:theme="@style/Platform.MaterialComponents.Light"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60dp"
+            />-->
+
+        <fragment
+            android:id="@+id/id_placeAutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:layout_marginEnd="60dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/id_mapViewOptions"
+            android:src="@drawable/down_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PlaceOverview"
+    android:background="@drawable/main_layout_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_descPlaceOverview"
+        android:paddingHorizontal="15dp"
+        android:text="@string/checkOutText"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_descPlaceOverview"
+        android:layout_above="@+id/id_mainRecyclerViewPlaceOverview"
+        android:paddingHorizontal="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/checkOutDesc"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:id="@+id/id_mainRecyclerViewPlaceOverview"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_background"
+        android:paddingTop="15dp" />
+
+</RelativeLayout>

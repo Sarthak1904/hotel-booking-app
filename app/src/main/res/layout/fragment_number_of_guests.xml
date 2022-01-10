@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NumberOfGuests"
+    android:background="@drawable/main_layout_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_linearLayout"
+        android:padding="15dp"
+        android:text="@string/place_offers"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/id_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@drawable/layout_background"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="15dp"
+        android:layout_alignParentBottom="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:text="Guests"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/id_guestsSubtract"
+                android:layout_weight="1"
+                android:src="@drawable/minus"
+                android:paddingEnd="10dp"
+                />
+
+            <EditText
+                android:id="@+id/id_guestsInput"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1.5"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/id_guestsAdd"
+                android:layout_weight="1"
+                android:src="@drawable/add"
+                android:paddingStart="10dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:text="Beds"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/id_bedsSubtract"
+                android:layout_weight="1"
+                android:src="@drawable/minus"
+                android:paddingEnd="10dp"
+                />
+
+            <EditText
+                android:id="@+id/id_bedsInput"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1.5"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/id_bedsAdd"
+                android:layout_weight="1"
+                android:src="@drawable/add"
+                android:paddingStart="10dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:text="Bedrooms"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/id_bedroomsSubtract"
+                android:layout_weight="1"
+                android:src="@drawable/minus"
+                android:paddingEnd="10dp"
+                />
+
+            <EditText
+                android:id="@+id/id_bedroomsInput"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1.5"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/id_bedroomsAdd"
+                android:layout_weight="1"
+                android:src="@drawable/add"
+                android:paddingStart="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:text="Bathrooms"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/id_bathroomssSubtract"
+                android:layout_weight="1"
+                android:src="@drawable/minus"
+                android:paddingEnd="10dp"
+                />
+
+            <EditText
+                android:id="@+id/id_bathroomsInput"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1.5"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/id_bathroomsAdd"
+                android:layout_weight="1"
+                android:src="@drawable/add"
+                android:paddingStart="10dp"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:text="@string/private_bathrooms"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Yes"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/id_yesPB"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.7"
+                android:src="@drawable/check_circle"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="No, they're all shared"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/id_noPB"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.7"
+                android:src="@drawable/check_circle"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

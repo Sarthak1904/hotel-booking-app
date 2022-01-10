@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DhaaramshalaOwn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="help">Help</string>
+    <string name="next">Next</string>
+    <string name="back">back</string>
+    <string name="place_Description">Which of the following best describes your place?</string>
+    <string name="place_offers">Let guests know what your place has to offer</string>
+    <string name="test">Text for Testing</string>
+    <string name="private_bathrooms">Are any of these bathrooms private?</string>
+    <string name="placeRentText">Now for the fun part - set your price</string>
+    <string name="rentRange">Place like yours usually range from 966 Rs. to 1610 Rs.</string>
+    <string name="placeRentOffer">Offer a 20% discount for your first 3 guests to help you get booked faster.</string>
+    <string name="placeSecurityText">Do you have any of these at your place?</string>
+    <string name="tempPlaceSecurity">Be sure to comply with your local laws and review Dharamshala\'s non-discrimination policy and guest and Host fees. Update your Cancellation Policy after you publish.</string>
+    <string name="placeSecurityImpThings">Some Important things to know</string>
+    <string name="checkOutText">Check out your listing!</string>
+    <string name="checkOutDesc">Once you save, we\'ll ask you to confirm a few details before you can publish.</string>
+    <string name="normal_map">Normal</string>
+    <string name="hybrid_map">Hybrid</string>
+    <string name="satellite_map">Satellite</string>
+    <string name="terrain_map">Terrain</string>
+    <string name="mp_location">Add your Location</string>
+    <string name="api_key">AIzaSyCuSOLYTU9M1hknKfbbmqya-EwcokoKoxM</string>
+</resources>

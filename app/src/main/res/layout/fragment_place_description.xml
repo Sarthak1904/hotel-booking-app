@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_mainLayout"
+    tools:context=".Fragments.PlaceDescription"
+    android:background="@drawable/main_layout_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_recyclerViewPlaceDescription"
+        android:padding="15dp"
+        android:text="@string/place_Description"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_recyclerViewPlaceDescription"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_background"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="20dp"
+        />
+
+</RelativeLayout>
